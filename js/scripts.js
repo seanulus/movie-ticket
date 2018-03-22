@@ -5,6 +5,13 @@ function Tickets (movie, showing, age) {
   this.age = age;
 };
 
+// if (this.showing === "12:00pm" || "3:00pm") {
+//    var matPrice = 5
+function resetValues() {
+  $("select#movie").val("");
+  $("select#showing").val("");
+  $("select#age").val("")
+}
 
 $(document).ready(function() {
   resetValues();
@@ -17,11 +24,8 @@ $(document).ready(function() {
 
     var tickets = new Tickets(movie, showing, age);
 
+    $("#user-result").show();
+
     resetValues();
   });
-  function resetValues() {
-    $("select#movie").val("");
-    $("select#showing").val("");
-    $("select#age").val("")
-  }
 });

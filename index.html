@@ -20,27 +20,27 @@
             <div class="form-group">
               <label for="movie">Movie:</label>
               <select class="form-control" id="movie">
-                <option>Idle Hands</option>
-                <option>The Big Lebowski</option>
-                <option>Spirited Away</option>
-                <option>Kiss Kiss Bang Bang</option>
+                <option value="1">Idle Hands</option>
+                <option value="2">The Big Lebowski</option>
+                <option value="3">Spirited Away</option>
+                <option value="4">Kiss Kiss Bang Bang</option>
               </select>
             </div>
             <div class="form-group">
               <label for="showing">Showing:</label>
               <select class="form-control" id="showing">
-                <option>12:00pm</option>
-                <option>3:00pm</option>
-                <option>6:00pm</option>
-                <option>9:00pm</option>
+                <option value="12">12:00pm</option>
+                <option value="15">3:00pm</option>
+                <option value="18">6:00pm</option>
+                <option value="21">9:00pm</option>
               </select>
             </div>
             <div class="form-group">
               <label for="age">Age:</label>
               <select class="form-control" id="age">
-                <option>Youth</option>
-                <option>Adult</option>
-                <option>Senior</option>
+                <option value="youth">Youth</option>
+                <option value="adult">Adult</option>
+                <option value="senior">Senior</option>
               </select>
             </div>
             <button type="submit" class="btn btn-success">Find Pricing</button>
@@ -49,7 +49,9 @@
           <div class="col-md-6">
             <h3>Your Pricing:</h3>
             <div id="user-result">
-
+              <h5>Movie: <span id="movie-name"></span></h5>
+              <h5>Showing: <span id="movie-showing"></span></h5>
+              <h5>Price: <span id="movie-price"></span></h5>
           </div>
         </div>
       </div>
